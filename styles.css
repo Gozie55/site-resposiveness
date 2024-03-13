@@ -1,0 +1,174 @@
+body {
+  font-family: "Ubuntu", serif;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background: linear-gradient(to right, rgb(230, 5, 230), rgb(36, 36, 166));
+  padding-bottom: 2em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo {
+  width: 5em;
+  height: auto;
+  margin-right: 1em;
+  display: inline;
+}
+
+nav ul {
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-image {
+  width: 60%;
+  height: auto;
+  margin-left: 0;
+}
+
+@media (min-width: 625px) {
+  .header-container {
+    flex-direction: row;
+  }
+
+  .sub-header {
+    flex-direction: row;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-article-icon {
+  width: 40%;
+  height: auto;
+}
+
+.first-article-icon:last-child {
+  margin-left: 0;
+}
+
+@media (min-width: 625px) {
+  .main-container {
+    flex-direction: row;
+  }
+}
+
+.secondary-container {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.post-secondary-container-image {
+  width: 30%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main {
+  width: 65%;
+  margin-right: 3em;
+}
+
+aside {
+  border: 1em solid grey;
+  width: 25%;
+  margin-top: 2em;
+}
+
+.sidebar-content {
+  padding-bottom: 1em;
+}
+
+.sidebar-image {
+  width: 30%;
+}
+
+@media (max-width: 625px) {
+  main {
+    width: 100%;
+  }
+
+  aside {
+    border: 10px solid grey;
+    width: 90%;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+}
+
+footer {
+  background: linear-gradient(to right, rgb(230, 5, 230), rgb(36, 36, 166));
+  margin-bottom: 3em;
+  margin-top: 3em;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 30%;
+  margin-bottom: 1em;
+}
